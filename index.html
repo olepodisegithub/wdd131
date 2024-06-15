@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello there</title>
-</head>
-<body>
-    <h1>Hello there</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Dynamic Web Fundamentals - Oaitse Lepodise</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals for Oaitse Lepodise">
+        <meta name="author" content="Oaitse Lepodise">
+
+        <link rel="stylesheet" href="styles/base.css">
+        <script src="scripts/getdates.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1 id="headertext">WDD 131: Dynamic Web Fundamentals - <span id="my_name">Oaitse Lepodise</span></h1>
+            <nav >
+                <a class="nav_a" target="_blank" href="https://www.linkedin.com/in/oatslepodise/" class="active" id="first">LinkedIn</a>
+                <a class="nav_a" target="_blank" href="https://byui.instructure.com/">I-Learn</a>
+                <a class="nav_a" target="_blank" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+                <a class="nav_a" target="_blank" href="#" id="last">Final Project</a>
+            </nav>
+        </header>
+        <main>
+            <section class="card" id="first_card">
+                <h2 id="about_me_header">About Me</h2>
+                <div id="me">
+                    <p id="about_me_text">
+                        My name is Oaitse Lepodise. 
+                        I was born and raised in Botswana. 
+                        I am married in Lesotho and have 2 kids. 
+                        We are currently leaving in Botswana. 
+                        I love programming a lot, which is what I am doing in my current work. 
+                        I love travelling especially going to the temple.
+                    </p>
+                    <img src="images/Oaitse Lepodise.jpg" alt="Image of Oaitse Lepodise" id="my_image">
+                </div>
+                <h2 id="my_place">Kopong, Botswana</h2>
+                <hr>
+                <div id="my_country">
+                    <p id="my_country_text">
+                        Botswana, a landlocked country in Southern Africa, 
+                        has a landscape defined by the Kalahari Desert and the Okavango Delta, 
+                        which becomes a lush animal habitat during the seasonal floods. 
+                        The massive Central Kalahari Game Reserve, 
+                        with its fossilized river valleys and undulating grasslands, 
+                        is home to numerous animals including giraffes, cheetahs, hyenas and wild dogs.
+                    </p>
+                    <img src="images/flag.png" alt="Image of Oaitse Lepodise" id="country_falg">  
+                    <p id="official">Official Flag of Botswana</p>  
+                </div>
+            </section>
+            <section class="card" id="second_card">
+                <h2 id="dev_header">Web Dev Resources</h2>
+                <ul style="list-style-type:disc;">
+                    <li><a class="res_a" target="_blank" href="https://www.w3schools.com">W3 Schools</a></li>
+                    <li><a class="res_a" target="_blank" href="https://www.gomasuga.com/placeimg?souce=placeimg">Placeholder Images</a></li>
+                    <li><a class="res_a" target="_blank" href="https://validator.w3.orgg">Markup Validation Service</a></li>
+                    <li><a class="res_a" target="_blank" href="https://jigsaw.w3.org/css-validator/">CSS Validation Service</a></li>
+                    <li><a class="res_a" target="_blank" href="https://picresize.com">Picture Resize</a></li>
+                    <li><a class="res_a" target="_blank" href="https://tinypng.com">Compress Images</a></li>
+                  </ul>  
+            </section>
+        </main>
+        <footer>
+            <p id="copyright">©<span id="currentyear"></span> 🦓 Oaitse Lepodise 🦓 Botswana</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
 </html>

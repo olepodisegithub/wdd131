@@ -1,0 +1,54 @@
+@media screen and (min-width: 700px) 
+{
+  
+    /* Head ___________________________________________________________________________*/
+
+    nav
+    {
+        display: flex;
+        align-self: center;
+        margin-right: 10px;
+    }
+
+    nav a
+    {
+        margin-left: 70px;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    #hamburger
+    {
+        display: none;
+    }
+
+    #lastlink
+    {
+        margin-right: 0;
+    }
+
+    #firslink
+    {
+        margin-left: 0;
+    }
+
+    /* MAIN ___________________________________________________________________________*/
+
+    section
+    {
+        display:grid; 
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        grid-gap: 25px;
+        place-items: center;
+    }
+
+    img
+    {
+        width: 100%; 
+        height: auto; 
+        margin: .5rem;
+    }
+
+    
+}

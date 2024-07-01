@@ -2,6 +2,7 @@
 {
     font-family: "Roboto", sans-serif;
     font-weight: 100px;
+    margin: auto;
 }
 
 :root 
@@ -15,28 +16,36 @@ header, main, footer
 {
     max-width: 1500px;
     display: block;
-    margin: auto;
+}
+
+body
+{
+    background-color: var(--divs_color);
 }
 
 main
 {
     background-color: rgb(236, 161, 161);
-    margin-bottom: 0px;
+}
+
+header
+{
+    background-color: rgb(236, 161, 161);
 }
 
 header:first-child
 {
     text-align: center;
     background-color: var(--main_color);
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
     color: white;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .hero
 {
-    background-color: var(--main_color);
+    background-color: var(--divs_color);
     text-align: center;
     margin-bottom: 0px;
 }
@@ -81,7 +90,6 @@ table
 {
  margin: auto;
  font-weight: 25;
- padding-bottom: 10px;
 }
 
 td:first-child
@@ -99,7 +107,6 @@ td:last-child
 
 footer
 {
-    margin-top: 0px;
     background-color: var(--main_color);
 }
 

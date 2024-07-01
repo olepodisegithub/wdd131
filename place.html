@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - My Country, Botswana - Oaitse Lepodise</title>
+        <meta name="description" content="WDD 131 - My Country, Botswana for Oaitse Lepodise">
+        <meta name="author" content="Oaitse Lepodise">
+
+        <link rel="stylesheet" href="styles/place-mobile-view.css">
+        <link rel="stylesheet" href="styles/place-wider-view.css">
+        <script src="scripts/place.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1 id="headertext">Botswana</h1> 
+        </header>
+        <main>
+            <div class="hero">
+                <picture>
+                    <source srcset="images/zebra-large.webp" media="(min-width: 1500px)" width="1500" height="1000">
+                    <source srcset="images/zebra-medium.webp" media="(min-width: 1000px)" width="1000" height="667">
+                    <img src="images/zebra-small.webp" alt="Zebra from Botswana" width="500" height="750">
+                  </picture>
+            </div>
+            <div class="data">
+                <h1>Data</h1>
+                <table>
+                    <tr>
+                        <td>Area:</td>
+                        <td>587,041 sq km</td>
+                      </tr>
+                      <tr>
+                        <td>Population:</td>
+                        <td>27,691,018</td>
+                      </tr>
+                      <tr>
+                        <td>Capital:</td>
+                        <td>Gaborone</td>
+                      </tr>
+                      <tr>
+                        <td>Languages:</td>
+                        <td>Setswana, English</td>
+                      </tr>
+                      <tr>
+                        <td>Currency:</td>
+                        <td>Pula</td>
+                      </tr>
+                      <tr>
+                        <td>Time Zone:</td>
+                        <td>CAT+2</td>
+                      </tr>
+                      <tr>
+                        <td>Calling Code:</td>
+                        <td>+267</td>
+                      </tr>
+                      <tr>
+                        <td>Internet TLD:</td>
+                        <td>.mg</td>
+                      </tr>
+                </table>
+            </div>
+            <div class="weather" id="weather">
+                <h1>Weather</h1>
+                <h1 id="weather-icon">🌤</h1>
+                <table id="weather-table">
+                    <tr>
+                        <td>Temperature:</td>
+                        <td>5&deg;C</td>
+                      </tr>
+                      <tr>
+                        <td>Conditions:</td>
+                        <td>Partly Cloudy</td>
+                      </tr>
+                      <tr>
+                        <td>Wind:</td>
+                        <td>9 km/h</td>
+                      </tr>
+                      <tr>
+                        <td>Wind Chill:</td>
+                        <td id="chil-value">10.7&deg;C</td>
+                      </tr>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <p id="copyright">©<span id="currentyear"></span> 🦓 Oaitse Lepodise 🦓 Botswana</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>

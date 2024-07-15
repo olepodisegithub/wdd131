@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Forms - Oaitse Lepodise</title>
+        <meta name="description" content="WDD 131 - Forms for Oaitse Lepodise">
+        <meta name="author" content="Oaitse Lepodise">
+
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="stylesheet" href="styles/form-small.css">
+        <script src="scripts/form.js" defer></script>
+    </head>
+    <body>
+        <header>
+           <h1>Product Review</h1>
+        </header>
+        <main>
+            <form method="get" action="review.html" class="rf1">
+                
+                <label class="lbs">Product Name*
+                    <select name="productname" required>
+                        <option value="" id="firstoption" disabled selected>Select a Product.. &#9662;</option>
+                    </select>
+                </label>
+                            
+                <Label class="lbs">Overall Rating*</Label>
+                <label class="radio" id="firstradio"><input type="radio" id="1star" name="rating" value="1 Star" required>⭐</label>
+                <label class="radio"><input type="radio" id="2stars" name="rating" value="2 Stars" required>⭐⭐</label>
+                <label class="radio"><input type="radio" id="3stars" name="rating" value="3 Stars" required>⭐⭐⭐</label>
+                <label class="radio"><input type="radio" id="4stars" name="rating" value="4 Stars" required>⭐⭐⭐⭐</label>
+                <label class="radio"><input type="radio" id="5stars" name="rating" value="5 Stars" required>⭐⭐⭐⭐⭐</label>
+                                      
+                <label class="lbs" id="dateofinstallationlabel">Date of Installation* <input type="date" id="dateofinstallation" name="installationdate" required ></label>           
+            
+                <label class="otherlbs">Which features did you find useful in the product ?</label>
+                <label class="otherlbs">(Check all that apply)</label>
+                <label class="lbs"><input type="checkbox" id="durability" name="durable" value="yes"> Durability</label>
+                <label class="lbs"><input type="checkbox" id="easy" name="easy" value="yes"> Easy of Use</label>
+                <label class="lbs"><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
+                <label class="lbs"><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+                                    
+                <label class="lbs">Written Review (optional)<textarea id="review" name="writtenreview" rows="6" cols="65"></textarea></label>
+                        
+                <label class="lbs">Your Name (Optional) <input type="text" id="idate" name="installationdate" ></label>           
+            
+                <input type="submit" value="Post Review">
+                        
+            </form>
+        </main>
+        <footer>
+            <p id="copyright">©<span id="currentyear"></span> 🦓 Oaitse Lepodise 🦓 Botswana</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>

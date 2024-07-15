@@ -1,0 +1,14 @@
+@media screen and (max-width: 600px) 
+{
+    .rf1 input[type="radio"]
+    {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .radio
+    {
+        margin-left: 50px;
+        padding-left: 50px;
+    }
+}

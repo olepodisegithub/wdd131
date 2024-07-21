@@ -1,4 +1,4 @@
-/*_____________________________________ Start Ensure Links are in flex on lare screen ______________________________________*/
+/*_____________________________________ Start Ensure Links are in flex on large screen ______________________________________*/
 
 function checkScreenAndFixNaviation(screen) 
 {
@@ -35,16 +35,46 @@ ham.addEventListener('click', () =>
 
 /*_____________________________________ Start Highlight click link ______________________________________*/
 
-const first_a = document.querySelector('#first');
-first_a.classList.toggle('active');
+function setActiveLink()
+{
+  console.log(getActiveLink())
+  removeDeactivateAllLink()
+  if (getActiveLink() == '')
+  {
+    const first_a = document.querySelector('#first');
+    first_a.classList.toggle('active');
+  }
+  else
+  {
+    const tabs = document.querySelectorAll('nav a');
+    tabs.forEach(tab => 
+    {
+      if (tab.innerHTML == getActiveLink())
+      {
+        tab.classList.toggle('active')
+      }
+    }); 
+  }
+}
+
+function getActiveLink() 
+{
+    return localStorage.getItem('activeLink');
+}
+
+function saveActiveLink(linkdetails) 
+{
+    localStorage.setItem('activeLink', linkdetails);
+}
+
+setActiveLink()
 
 const tabs = document.querySelectorAll('nav a');
 tabs.forEach(tab => 
 {
  tab.addEventListener('click', () => 
   {
-    removeDeactivateAllLink()
-    tab.classList.toggle('active');
+    saveActiveLink(tab.innerHTML)
   });
 });
 

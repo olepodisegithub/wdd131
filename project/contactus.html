@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us (Kweneng Distric Council)</title>
+        <meta name="description" content="Kweneng Distric Council Home Page">
+        <meta name="author" content="Oaitse Lepodise">
+
+        <link rel="stylesheet" href="styles/header_and_footer_base.css">
+        <link rel="stylesheet" href="styles/header_and_footer_large.css">
+        <link rel="stylesheet" href="styles/contactus.css">
+        <script src="scripts/header_and_footer.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <button id="hamburger" name="hamburger"></button>
+            <picture>
+                <img id="logo" src="images/kweneng_flag.webp" alt="kweneng district flag" width="150" height="149.347826086957">
+              </picture>
+              <nav >
+                <a class="nav_a" target="" href="index.html" class="active" id="first">Home</a>
+                <a class="nav_a" target="" href="localauthorities.html">Local Authorities</a>
+                <a class="nav_a" target="" href="notifications.html">Notifications</a>
+                <a class="nav_a" target="" href="contactus.html" id="last">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <form action="thankyou.html" class="ctu">
+                <div>
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <label>First Name* <input type="text" name="fname" required></label>
+                        <label>Last Name* <input type="text" name="lname" required></label>
+                        <label>Phone <input type="tel" name="phone" placeholder="+267 7777777"></label>
+                
+                        <label>How to contact you</label>
+                        <label><input type="radio" name="contact" value="Phone Call">Phone Call</label>
+                        <label><input type="radio" name="contact" value="Whats App">Whats App</label>
+                        <label><input type="radio" name="contact" value="SMS">SMS</label>
+                        <label>Email* <input type="email" placeholder="myemail@gmail.com" required></label>
+                        
+                        <label>Subject</label>
+                        <textarea id="subject" name="subject" placeholder="type here.." style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+
+                    </fieldset>                    
+                </div>        
+            </form>
+        </main>
+        <footer>
+            <p id="copyright">©<span id="currentyear"></span> 🦓 Oaitse Lepodise 🦓 Botswana</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>

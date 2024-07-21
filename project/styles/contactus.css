@@ -1,0 +1,54 @@
+@import url('https://fonts.google.com/specimen/Open+Sans?category=Serif,Sans+Serif&vfonly=true&preview.size=12');
+
+:root 
+{
+    --font: sans-serif,Lato, Helvetica;
+}
+body
+{
+    font-family: var(--font);
+}
+
+form
+{
+    background-color: var(--background-color);
+    border-radius: 5px 5px 5px 5px ;
+    padding-bottom: 10px;
+}
+
+label
+{
+    display: block;
+    padding-top: 1rem;
+    color: var(--body-text-color);
+    font-size: 1rem;
+    padding-left: 40px;
+}
+
+.ctu input[type="text"],
+.ctu input[type="submit"],
+.ctu input[type="email"],
+.ctu input[type="tel"],
+textarea
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 500px;
+    appearance: none;
+    font-size: 1.2rem;
+}
+
+textarea
+{
+    Margin-left: 40px;
+}
+
+.ctu input[type="submit"]
+{
+    Margin-left: 55px;
+    margin-top: 10px;
+}

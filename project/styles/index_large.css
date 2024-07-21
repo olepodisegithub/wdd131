@@ -1,0 +1,60 @@
+@media screen and (min-width: 1000px) 
+{
+
+    main
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .hero
+    {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mission
+    {       
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+
+        position: relative;
+        width: 300px;
+        height: 160px;
+        margin-top: 50px;
+        margin-left: 150px;
+        opacity: 0.6;
+        background-color: white;
+    }
+
+    .Vision
+    {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+
+        position: relative;
+        width: 300px;
+        height: 160px;
+        margin-top: 250px;
+        margin-left: 150px;
+        opacity: 0.6;
+        background-color: white;
+    }
+
+    .Values
+    {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+
+        position: relative;
+        width: 300px;
+        height: 160px;
+        margin-top: 450px;
+        margin-left: 150px;
+        opacity: 0.6;
+        background-color: white;
+    }
+
+}

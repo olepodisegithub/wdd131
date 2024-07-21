@@ -1,0 +1,31 @@
+@import url('https://fonts.google.com/specimen/Open+Sans?category=Serif,Sans+Serif&vfonly=true&preview.size=12');
+
+:root 
+{
+    --font: sans-serif,Lato, Helvetica;
+}
+body
+{
+    font-family: var(--font);
+}
+
+section
+{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+section h2
+{
+    font-weight: bold;
+}
+
+img
+{
+    width: 50%; 
+    height: auto; 
+    margin: .5rem;
+}

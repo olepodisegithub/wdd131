@@ -1,0 +1,44 @@
+@import url('https://fonts.google.com/specimen/Open+Sans?category=Serif,Sans+Serif&vfonly=true&preview.size=12');
+
+:root 
+{
+    --font: sans-serif,Lato, Helvetica;
+}
+body
+{
+    font-family: var(--font);
+}
+
+
+.hero 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mission h4,.Vision h4,.Values
+{       
+    text-align: center;
+}
+.mission p,.Vision p,.Values
+{       
+    text-align: center;
+}
+
+.Values ul li
+{
+    list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Values
+{
+    margin-bottom: 0;
+}
+
+main div h4,p
+{
+    color: black;
+}

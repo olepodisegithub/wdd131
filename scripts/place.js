@@ -17,7 +17,7 @@ function myFunction(mdq)
     }
 }
   
-var mdq = window.matchMedia("(max-width: 1500px)")
+var mdq = window.matchMedia("(max-width: 1000px)")
 
 myFunction(mdq);
 mdq.addEventListener("change", function() 

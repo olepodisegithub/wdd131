@@ -1,6 +1,12 @@
-body 
+@import url('https://fonts.google.com/specimen/Open+Sans?category=Serif,Sans+Serif&vfonly=true&preview.size=12');
+
+:root 
 {
-    font-family: 'Ubuntu', serif; 
+    --font: sans-serif,Lato, Helvetica;
+}
+body
+{
+    font-family: var(--font);
 }
 
 header, main, footer
@@ -46,7 +52,7 @@ nav a:hover
     margin-top: 10px;
     padding: 3px 7px 6px;
 	background-color:  #053b53;
-	color:white;
+	color:black;
  	position: absolute;
 	top: 1rem;
 	right: 1rem;
@@ -73,7 +79,7 @@ nav a:hover
     padding-top: 20px;
 	display: block;
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 20px;
     padding-bottom: 10px;
 }

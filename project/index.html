@@ -3,13 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kweneng Distric Council Home Page</title>
+        <title>Home Page (Kweneng Distric Council)</title>
         <meta name="description" content="Kweneng Distric Council Home Page">
         <meta name="author" content="Oaitse Lepodise">
 
-        <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/largeview.css">
-        <script src="scripts/kweneng.js" defer></script>
+        <link rel="stylesheet" href="styles/header_and_footer_base.css">
+        <link rel="stylesheet" href="styles/header_and_footer_large.css">
+        <link rel="stylesheet" href="styles/index_large.css">
+        <link rel="stylesheet" href="styles/index_base.css">
+        <script src="scripts/header_and_footer.js" defer></script>
     </head>
     <body>
         <header>
@@ -17,15 +19,48 @@
             <picture>
                 <img id="logo" src="images/kweneng_flag.webp" alt="kweneng district flag" width="150" height="149.347826086957">
               </picture>
-            <nav >
-                <a class="nav_a" target="" href="#" class="active" id="first">Home</a>
-                <a class="nav_a" target="" href="#">Leadership</a>
-                <a class="nav_a" target="" href="#">Notifications</a>
-                <a class="nav_a" target="" href="#">Council Places</a>
-                <a class="nav_a" target="" href="#" id="last">Contact Us</a>
+              <nav >
+                <a class="nav_a" target="" href="index.html" class="active" id="first">Home</a>
+                <a class="nav_a" target="_self" href="localauthorities.html">Local Authorities</a>
+                <a class="nav_a" target="" href="notifications.html">Notifications</a>
+                <a class="nav_a" target="" href="contactus.html" id="last">Contact Us</a>
             </nav>
         </header>
         <main>
+            <div class="hero">
+                <picture>
+                    <source srcset="images/mainhero.webp" media="(min-width: 960px)" width="960" height="640">
+                    <source srcset="images/mainmedium.webp" media="(min-width: 518px)" width="518" height="547">
+                    <img src="images/mainsmall.webp" alt="Kwening District Council Offices" width="296" height="266">
+                  </picture>
+            </div>
+            <div class="mission">
+                <h4>
+                    Mission
+                </h4>
+                <p>
+                    To deliver quality social development services and Municipal services through effective local governance for improved lives of the Kweneng Community.
+                </p>
+            </div>
+            <div class="Vision">
+                <h4>
+                    Vision
+                </h4>
+                <p>
+                    Sustainable livelihoods
+                </p>
+            </div>
+            <div class="Values">
+                <h4>
+                    Values
+                </h4>
+                <ul>
+                    <li>Botho</li>
+                    <li>Ethical conduct</li>
+                    <li>People centered</li>
+                    <li>Commitment</li>
+                </ul>
+            </div>
         </main>
         <footer>
             <p id="copyright">©<span id="currentyear"></span> 🦓 Oaitse Lepodise 🦓 Botswana</p>
